@@ -53,5 +53,3 @@ clusters.to_csv('clusters2.csv')
 sql = f"select * from {clusters.physical_name} limit 2 "
 dfc = linker.query_sql(sql)
 print(dfc)
-
-linker.precision_recall_chart_from_labels_column("unique_id", threshold_actual = 0.95)
